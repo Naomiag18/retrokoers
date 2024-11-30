@@ -1,0 +1,261 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', Courier, monospace;
+    margin: 0;
+    padding:0 20px;;
+    background-color: #f4ecd8; /* A warm, vintage paper-like color */
+    color: #5c432b; /* Brownish vintage text color */
+    line-height: 1.6;
+    background-image: url('https://images.unsplash.com/photo-1649260237380-ce06cc326168?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+    background-position: center center;
+}
+
+
+
+/* Header */
+header {
+    background-color: #524d48;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 3px solid #ffffff; /* Creates a bold retro-style divider */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Titles */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #d5854f;
+}
+
+/* Event Section */
+.event {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f5f0;
+    border: 2px solid #d4a373;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+}
+
+.event img {
+    max-width: 150px;
+    margin-right: 20px;
+    border: 3px solid #d4a373;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.event-details h3 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #5c432b;
+}
+
+.event-details p {
+    margin: 5px 0 10px;
+    font-size: 1.1em;
+    color: #7f5539;
+}
+
+.event-details a {
+    color: #b08968;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px dashed #d4a373;
+}
+
+.event-details a:hover {
+    color: #5c432b;
+    border-bottom: 2px solid #5c432b;
+}
+/* Navbar Styling */
+nav {
+    background-color: #b0886800; /* Warm mocha tone for a vintage touch */
+    color: #fbf8f5; /* Neutral text color for good contrast */
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle modern shadow */
+    font-family: 'Playfair Display', serif; /* Trendy serif font */
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f8f1e4; /* Light beige for a subtle retro feel */
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Soft vintage shadow */
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo a:hover {
+    color: #ffdab9; /* Peachy hue for a trendy hover effect */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Roboto Mono', monospace; /* Retro-modern monospaced font */
+    color: #ffffff; /* Matches logo for consistency */
+    padding: 8px 12px;
+    border: 2px solid transparent; /* Adds a clean look */
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: #7f5539; /* Dark brown retro background */
+    color: #ffdab9; /* Soft peach text */
+    border-color: #ffdab9; /* Highlight effect */
+    transform: translateY(-2px); /* Subtle hover lift */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Gentle shadow */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        background-color: #8d6e63;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: center;
+    }
+}
+/* Calendar Promo Section */
+.calendar-promo {
+    background-color: #524d48d5; /* Warm tan for a vintage touch */
+    color: #ffffff; /* Text in white for contrast */
+    text-align: center;
+    padding: 50px 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.calendar-promo h2 {
+    font-family: 'Playfair Display', serif; /* Retro serif font */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.calendar-promo p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.promo-button {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace; /* Typewriter-style font */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #d5854f; /* Deep brown vintage tone */
+    border: 3px solid #5c432b; /* Darker border for definition */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.promo-button:hover {
+    background-color: #5c432b; /* Darker hover effect */
+    border-color: #fefae0; /* Light cream hover border */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+}
+
+.email-link {
+    text-decoration: none;
+    color: #7f5539; /* Primary color for the link */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.email-link:hover {
+    color: #7f5539; /* Darker shade on hover */
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Glow effect */
+}
+
+.email-link:active {
+    color: #5c432b; /* Even darker shade for active click */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #524d48;
+    color: #fff;
+    margin-top: 20px;
+    border-top: 3px solid #fff;
+    font-family: 'Georgia', serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
